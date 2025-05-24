@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyle Phillips</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .topnav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: #575757;
+      color: white;
+    }
+
+    .topnav .active {
+      background-color: goldenrod;
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+    }
+
+    h1, h4 {
+      color: goldenrod;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    a {
+      color: goldenrod;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      margin: 30px 0;
+      border: none;
+      height: 1px;
+      background-color: #ddd;
+    }
+
+    .section-title {
+      margin-bottom: 10px;
+    }
+
+    .contact-links a {
+      display: block;
+    }
+	
+	.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.brand {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  background-color: goldenrod;
+  color: white;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Menu */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="nav-container">
+    <span class="brand">Kyle Phillips</span>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">About Me</a></li>
+      <li><a href="tdm.html">TDM</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <main class="container">
+    <header>
+      <h1>Kyle Phillips</h1>
+      <div class="contact-links">
+        <a href="mailto:phill456@purdue.edu">phill456@purdue.edu</a>
+        <a href="mailto:kylephillips2003@gmail.com">kylephillips2003@gmail.com</a>
+        <a href="https://github.com/kphillips2003" target="_blank" rel="noopener noreferrer">github.com/kphillips2003</a>
+        <a href="https://linkedin.com/in/kphillips2003" target="_blank" rel="noopener noreferrer">linkedin.com/in/kphillips2003</a>
+      </div>
+    </header>
+
+    <hr />
+
+    <section>
+      <h4 class="section-title">Experience</h4>
+      <p><strong>The Data Mine</strong>, Purdue University – <em>Undergraduate Data Science Researcher</em><br>
+        <small>August 2022 – Present</small>
+      </p>
+      <ul>
+        <li>Freshman Year (Fall '22 – Spring '23): MISO
+          <ul>
+            <li>Worked in Python with line ratings and weather data</li>
+          </ul>
+        </li>
+        <li>Sophomore Year (Fall '23 – Spring '24): Purdue Athletics Football
+          <ul>
+            <li>Used React to build an app for their strength and conditioning data</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <h4 class="section-title">Education</h4>
+      <p><strong>Purdue University</strong>, West Lafayette, IN – <em>B.S. in Computer Science and Data Science</em><br>
+        <small>August 2022 – Anticipated May 2026</small>
+      </p>
+      <ul>
+        <li>GPA: TBD</li>
+        <li>Relevant Coursework:
+          <ul>
+            <li><strong>Completed:</strong> Object Oriented Programming (Java), C Programming, Discrete Math, Python Programming, Data Structures and Algorithms, Computer Architecture, Statistics for DS, Data Mine Seminar I-III, Data Mine Corporate Partners I-III</li>
+            <li><strong>In Progress:</strong> Intro to DS, Systems Programming, Linear Algebra, Probability, Data Mine Seminar IV, Data Mine Corporate Partners IV</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <h4 class="section-title">Skills</h4>
+      <ul>
+        <li>Programming: Java, C, Python, Assembly</li>
+        <li>Web: HTML, CSS, JavaScript, React</li>
+        <li>Tools: Git</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <h4 class="section-title">Activities</h4>
+      <p><strong>SIGGD</strong> – Video Game Programming<br><small>August 2022 – Present</small></p>
+      <p><strong>Team 3176 – FIRST Robotics Competition</strong> – Programming, Leadership, and Competition Team<br><small>August 2018 – July 2022</small></p>
+    </section>
+  </main>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+
+</body>
+</html>
