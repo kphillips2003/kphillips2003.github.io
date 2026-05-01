@@ -37,7 +37,11 @@
       background: white;
     }
 
-    h1, h4 {
+	h1 {
+	  color: gray
+	}
+
+    h4 {
       color: goldenrod;
     }
 
@@ -143,4 +147,16 @@
   .nav-toggle {
     display: block;
   }
+}
+
+.trifold-container {
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+
+.panel {
+  flex: 1; /* Distributes width equally (33.33% each) */
+  <!--border: 1px solid #ccc;-->
+  padding: 20px;
 }
