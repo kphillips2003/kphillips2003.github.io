@@ -1,136 +1,498 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--<meta http-equiv="refresh" content="0; url=https://kphillips2003.github.io" />-->
-  <script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Kyle Phillips — Purdue Computer Science and Data Science graduate, software development projects, technical experience, and portfolio."
+  >
+<script>
 	if (window.location.pathname.endsWith("/index.html")) {
 		window.history.replaceState(null, "", "https://kphillips2003.github.io");
 	}
   </script>
-  <title>Kyle Phillips</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="canonical" href="https://kphillips2003.github.io" />
+  <title>Kyle Phillips | Software Engineer</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://kphillips2003.github.io/">
 </head>
+
 <body>
-  <nav class="navbar">
-  <div class="nav-container">
-    <span class="brand">Kyle Phillips</span>
-    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-    <ul class="nav-links">
-      <li><a class="active" href="index.html">About Me</a></li>
-      <li><a href="education.html">Education</a></li>
-    </ul>
-  </div>
-</nav>
+  <header>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html#top" class="nav-logo">Kyle Phillips</a>
 
-<main class="container">
+        <button class="nav-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
 
-<div class="trifold-container">
-	<div class="panel-left">
-		<img src="profile_picture.jpg" alt="Picture of Me" style="display: block; height: 150px;">
-	</div>
-	<div class="panel-mid">
-		<h1 style="color: black;">Kyle Phillips</h1>
-	</div>
-	<div class="panel-right">
-		<img src="20260508_212801.jpg" alt="Picture of Me" style="display: block; height: 150px;">
-	</div>
-</div>
+        <ul class="nav-links">
+            <li class="nav-dropdown">
+    		<div class="about-nav-row">
+        		<a href="index.html#about" class="about-link">About</a>
+        		<button class="dropdown-toggle"
+                	aria-label="Show About section links"
+                	aria-expanded="false">
+            		▾
+        		</button>
+    		</div>
 
-<h3>My Profiles and Contact Info</h3>
-<div class="contact-links">
-		<a href="mailto:kylephillips2003@gmail.com">kylephillips2003@gmail.com</a>
-        <a href="mailto:phill456@purdue.edu">phill456@purdue.edu</a>
-		<a href="https://kphillips2003.github.io">kphillips2003.github.io</a>
-        <a href="https://github.com/kphillips2003" target="_blank" rel="noopener noreferrer">github.com/kphillips2003</a>
-        <a href="https://linkedin.com/in/kphillips2003" target="_blank" rel="noopener noreferrer">linkedin.com/in/kphillips2003</a>
-</div>
+    		<ul class="dropdown-menu">
+        		<li><a href="index.html#projects">Projects</a></li>
+        		<li><a href="index.html#experience">Experience</a></li>
+        		<li><a href="index.html#education">Education</a></li>
+        		<li><a href="index.html#skills">Skills</a></li>
+        		<li><a href="index.html#contact">Contact</a></li>
+    		</ul>
+	    </li>
 
-    <hr />
+	    <li class="nav-dropdown">
+    		<div class="about-nav-row">
+        		<a href="education.html" class="about-link">Education</a>
+        		<button class="dropdown-toggle"
+                	aria-label="Show About section links"
+                	aria-expanded="false">
+            		▾
+        		</button>
+    		</div>
 
-    <section>
-      <h4 class="section-title">Experience</h4>
-	  <p><strong>Purdue Computer Science</strong>, Purdue University - <em>CS 25200 UTA</em><br>
-		<small>January 2025 - May 2026</small>
-	 </p>
-	 <ul>
-		<li>Undergraduate Teaching Assisstant for CS 25200 Systems Programming under Professor Gustavo Rodriguez-Rivera</li>
-		<li>Answered Student Questions during Lab, Office Hours, and on Ed Discussion, the Student Discussion Board</li>
-		<li>Proctored and Graded Lab Assignments and Exams</li>
-	 </ul>
+    		<ul class="dropdown-menu">
+        		<li><a href="education.html#miso-poster">MISO Poster</a></li>
+        		<li><a href="education.html#football-poster">Football Poster</a></li>
+			<li><a href="education.html#class-list">Class List</a></li>
+    		</ul>
+	    </li>
+        </ul>
+    </div>
+    </nav>
+  </header>
 
-      <p><strong>The Data Mine</strong>, Purdue University – <em>Undergraduate Data Science Researcher</em><br>
-        <small>August 2022 – May 2024</small>
+  <main class="container">
+
+    <!-- Introduction -->
+    <section class="hero" id="about">
+      <div class="hero-content">
+        <p class="eyebrow">
+          SOFTWARE DEVELOPMENT · COMPUTER SCIENCE · DATA SCIENCE
+        </p>
+
+        <h1>Kyle Phillips</h1>
+
+        <p class="hero-subtitle">
+          Computer Science and Data Science graduate from
+          Purdue University.
+        </p>
+
+        <p>
+          I enjoy solving technical problems and building software,
+          from systems programming and web applications to data-driven
+          tools and interactive games. My experience includes developing
+          React applications, analyzing data, and helping students
+          understand low-level programming concepts.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" target="_blank" href="Kyle-Phillips-Resume-Late-2026.pdf">
+            View Resume
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="https://github.com/kphillips2003"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="https://linkedin.com/in/kphillips2003"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="profile_picture.jpg"
+          alt="Kyle Phillips"
+          width="180"
+          height="180"
+        >
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2 class="section-title">Projects</h2>
+        <p>
+          Software development, collaborative research, and game
+          development projects from my time at Purdue.
+        </p>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-content">
+            <p class="project-type">Web Development · Data Analytics</p>
+
+            <h3>Purdue Football Performance Application</h3>
+
+            <p>
+              Collaborated with Purdue Football strength and conditioning
+              stakeholders through The Data Mine Corporate Partners
+              program to develop an application for working with
+              player performance data.
+            </p>
+
+            <p>
+              Contributed to React interfaces and worked with APIs,
+              databases, and analytics while adapting to evolving
+              stakeholder requirements.
+            </p>
+
+            <ul class="tag-list" aria-label="Technologies">
+              <li>React</li>
+              <li>APIs</li>
+              <li>Databases</li>
+              <li>Data Analytics</li>
+            </ul>
+
+            <p class="project-note">
+              Developed with a corporate partner. Source code and
+              restricted project materials are not publicly available.
+            </p>
+
+            <!-- Add a link to your approved poster here when available. -->
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <p class="project-type">Python · Data Science</p>
+
+            <h3>MISO Weather and Transmission Analysis</h3>
+
+            <p>
+              Worked with weather data and electrical transmission
+              line ratings as part of a collaborative research project
+              through The Data Mine at Purdue University.
+            </p>
+
+            <p>
+              Used Python to work with data from weather and
+              transmission-related sources in support of the
+              project's analysis.
+            </p>
+
+            <ul class="tag-list" aria-label="Technologies">
+              <li>Python</li>
+              <li>Data Analysis</li>
+              <li>Weather Data</li>
+            </ul>
+
+            <p class="project-note">
+              Research materials are subject to partner confidentiality
+              requirements.
+            </p>
+
+            <!-- Add a link to your approved poster here when available. -->
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <p class="project-type">Game Development · Unity</p>
+
+            <h3>SIGGD Game Development</h3>
+
+            <p>
+              Participated in Purdue's student game development team,
+              contributing to programming and game design across
+              projects developed during the academic year.
+            </p>
+
+            <p>
+              Contributed to two games published on Steam:
+              <em>Echoes of Isovios: A Legacy Undone</em> and
+              <em>Project: Deimos</em>.
+            </p>
+
+            <ul class="tag-list" aria-label="Technologies and skills">
+              <li>Unity</li>
+              <li>C#</li>
+              <li>Game Design</li>
+            </ul>
+
+            <p class="project-note">
+              My contributions included enemy and character kit design
+              for Echoes of Isovios, and level, enemy, and item design
+              for Project: Deimos.
+            </p>
+
+            <!-- Add verified Steam store links to each game here. -->
+          </div>
+        </article>
+
+      </div>
+
+      <p class="section-footer">
+        Explore more of my work on
+        <a
+          href="https://github.com/kphillips2003"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>.
       </p>
-      <ul>
-        <li>Freshman Year (Fall '22 – Spring '23): MISO
-          <ul>
-            <li>Worked in Python with line ratings and weather data</li>
-          </ul>
-        </li>
-        <li>Sophomore Year (Fall '23 – Spring '24): Purdue Athletics Football
-          <ul>
-            <li>Used React to build an app for their strength and conditioning data</li>
-          </ul>
-        </li>
-      </ul>
     </section>
 
-    <hr />
+    <!-- Experience -->
+    <section id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">PROFESSIONAL EXPERIENCE</p>
+        <h2 class="section-title">Experience</h2>
+      </div>
 
-    <section>
-      <h4 class="section-title">Education</h4>
-      <p><strong>Purdue University</strong>, West Lafayette, IN – <em>B.S. in Computer Science and Data Science</em><br>
-        <small>August 2022 – May 2026</small>
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <h3>Head Lab Undergraduate Teaching Assistant</h3>
+            <p class="organization">
+              Purdue University · CS 25200 Systems Programming
+            </p>
+          </div>
+
+          <p class="date">Jan 2026 – May 2026</p>
+        </div>
+
+        <ul>
+          <li>
+            Led weekly lab sessions supporting students in systems
+            programming and low-level software development.
+          </li>
+          <li>
+            Developed and presented instructional material covering
+            systems programming and x86 assembly.
+          </li>
+          <li>
+            Wrote quiz problems and helped students debug programming
+            assignments and resolve technical issues.
+          </li>
+          <li>
+            Provided individualized support during labs, office hours,
+            and online discussions.
+          </li>
+        </ul>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <h3>Undergraduate Teaching Assistant</h3>
+            <p class="organization">
+              Purdue University · CS 25200 Systems Programming
+            </p>
+          </div>
+
+          <p class="date">Aug 2025 – Dec 2025</p>
+        </div>
+
+        <ul>
+          <li>
+            Supported lab instruction, student questions, and
+            assignment evaluation in systems programming.
+          </li>
+        </ul>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <div>
+            <h3>Undergraduate Data Science Researcher</h3>
+            <p class="organization">
+              The Data Mine · Purdue University
+            </p>
+          </div>
+
+          <p class="date">Aug 2022 – May 2024</p>
+        </div>
+
+        <ul>
+          <li>
+            Collaborated on data science and software projects with
+            corporate partners.
+          </li>
+          <li>
+            Worked with Python, weather data, and transmission line
+            ratings during the MISO project.
+          </li>
+          <li>
+            Contributed to a React application for Purdue Football
+            strength and conditioning during the athletics project.
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">TECHNICAL BACKGROUND</p>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Programming Languages</h3>
+          <p>C, C++, Java, Python, C#, x86 Assembly</p>
+        </div>
+
+        <div class="skill-group">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, React</p>
+        </div>
+
+        <div class="skill-group">
+          <h3>Tools and Platforms</h3>
+          <p>Git, Unity</p>
+        </div>
+
+        <div class="skill-group">
+          <h3>Areas of Focus</h3>
+          <p>
+            Systems Programming, Data Structures and Algorithms,
+            Data Analysis, Software Development
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="section-heading">
+        <p class="eyebrow">ACADEMIC BACKGROUND</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <article class="education-card">
+        <div>
+          <h3>Purdue University</h3>
+          <p class="organization">West Lafayette, Indiana</p>
+          <p>
+            Bachelor of Science in Computer Science
+            (Machine Intelligence concentration)
+            <br>
+            Bachelor of Science in Data Science
+          </p>
+          <p>
+            Minors in Mathematics and English
+          </p>
+        </div>
+
+        <div class="education-details">
+          <p class="date">Aug 2022 – May 2026</p>
+          <p><strong>GPA:</strong> 3.64 / 4.00</p>
+          <p>Dean's List every semester</p>
+        </div>
+      </article>
+
+      <p class="section-footer">
+        View my
+        <a href="education.html">full education and coursework</a>.
       </p>
-      <ul>
-		<li>Major: Computer Science (Concentration in Machine Intelligence)</li>
-		<li>Major: Data Science</li>
-		<li>Minor: Mathematics</li>
-		<li>Minor: English</li>
-        	<li>3.64 GPA</li>
-		<li>Achedived Dean's List every semester</li>
-		<li>Participated in Data Mine Corporate Partners Cohort</li>
-		<li>CS Coursework: Java, C, Python, Data Structures & Algorithms, Architecture, Systems, Intro to Data Science, Intro to AI, Machine Learning, Large Scale Data Analysis, Analysis of Algorithms, Data Science Capstone</li>
-		<li>MA/STAT Coursework: Calculus I-III, Statistics for Data Science, Linear Algebra, Probability, Statistical Theory, </li>
-		<li>Other Coursework: Earth Science, Ethics, Scientific Presentation, Spanish, and English Literature</li>
-		<!--<li>Fall 2025: Robotics, Foundations of Analysis, Regression Analysis, CS 390 ARC, Monsters, and Literature & Technology</li>-->
-		<!--<li>Spring 2026: Linquistics, King Arthur, Design of Expleriments, and AI Forge</li>-->
-		<li>More info on the <a style="color: goldenrod;" href="education.html">Education</a> page</li>
-	  </ul>
     </section>
 
-    <hr />
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2 class="section-title">Contact</h2>
+        <p>
+          Interested in connecting about software development
+          opportunities or my projects? Feel free to reach out.
+        </p>
+      </div>
 
-    <section>
-      <h4 class="section-title">Skills</h4>
-      <ul>
-        <li>Programming: Java, C, Python, Assembly, C#, C++</li>
-        <li>Web: HTML, CSS, JavaScript, React</li>
-        <li>Tools: Git</li>
-      </ul>
+      <div class="contact-links">
+        <a href="mailto:kylephillips2003@gmail.com">
+          kylephillips2003@gmail.com
+        </a>
+
+        <a
+          href="https://linkedin.com/in/kphillips2003"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/kphillips2003"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </div>
     </section>
 
-    <hr />
-
-    <section>
-      <h4 class="section-title">Activities</h4>
-      <p><strong>SIGGD</strong> – Video Game Design and Programming<br><small>August 2022 – May 2026</small></p>
-      <p><strong>Team 3176 – FIRST Robotics Competition</strong> – Programming, Leadership, and Competition Team<br><small>August 2018 – July 2022</small></p>
-    </section>
   </main>
 
+  <footer class="site-footer">
+    <p>&copy; 2026 Kyle Phillips</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      const isExpanded =
+        toggle.getAttribute("aria-expanded") === "true";
+
+      toggle.setAttribute("aria-expanded", String(!isExpanded));
+      navLinks.classList.toggle("show", !isExpanded);
+    });
+
+    navLinks.addEventListener("click", (event) => {
+      if (event.target.closest("a")) {
+        navLinks.classList.remove("show");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  </script>
+
 <script>
-  const toggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
+document.querySelectorAll(".dropdown-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+        const dropdown = button.closest(".nav-dropdown");
+        const isOpen = dropdown.classList.toggle("open");
+        button.setAttribute("aria-expanded", String(isOpen));
+    });
+});
 
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
+document.querySelectorAll(".dropdown-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        const dropdown = link.closest(".nav-dropdown");
+        dropdown.classList.remove("open");
+        dropdown.querySelector(".dropdown-toggle")
+            .setAttribute("aria-expanded", "false");
+    });
+});
 </script>
-
 
 </body>
 </html>
