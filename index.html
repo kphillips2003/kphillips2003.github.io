@@ -450,43 +450,68 @@
     <p>&copy; 2026 Kyle Phillips</p>
   </footer>
 
-  <script>
-    const toggle = document.querySelector(".nav-toggle");
-    const navLinks = document.querySelector(".nav-links");
-
-    toggle.addEventListener("click", () => {
-      const isExpanded =
-        toggle.getAttribute("aria-expanded") === "true";
-
-      toggle.setAttribute("aria-expanded", String(!isExpanded));
-      navLinks.classList.toggle("show", !isExpanded);
-    });
-
-    navLinks.addEventListener("click", (event) => {
-      if (event.target.closest("a")) {
-        navLinks.classList.remove("show");
-        toggle.setAttribute("aria-expanded", "false");
-      }
-    });
-  </script>
 
 <script>
-document.querySelectorAll(".dropdown-toggle").forEach(button => {
-    button.addEventListener("click", () => {
-        const dropdown = button.closest(".nav-dropdown");
-        const isOpen = dropdown.classList.toggle("open");
-        button.setAttribute("aria-expanded", String(isOpen));
-    });
-});
+    // Mobile navigation menu
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-document.querySelectorAll(".dropdown-menu a").forEach(link => {
-    link.addEventListener("click", () => {
-        const dropdown = link.closest(".nav-dropdown");
-        dropdown.classList.remove("open");
-        dropdown.querySelector(".dropdown-toggle")
-            .setAttribute("aria-expanded", "false");
+    if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+            const isOpen = navLinks.classList.toggle("open");
+            navToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                // Close the mobile menu after navigating.
+                navLinks.classList.remove("open");
+                navToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+    }
+
+    // Dropdown menus
+    document.querySelectorAll(".dropdown-toggle").forEach(button => {
+        button.addEventListener("click", event => {
+            event.stopPropagation();
+
+            const dropdown = button.closest(".nav-dropdown");
+            const isOpen = dropdown.classList.toggle("open");
+
+            button.setAttribute("aria-expanded", String(isOpen));
+        });
     });
-});
+
+    // Close a dropdown when clicking one of its links.
+    document.querySelectorAll(".dropdown-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            const dropdown = link.closest(".nav-dropdown");
+
+            if (dropdown) {
+                dropdown.classList.remove("open");
+
+                const button = dropdown.querySelector(".dropdown-toggle");
+                if (button) {
+                    button.setAttribute("aria-expanded", "false");
+                }
+            }
+        });
+    });
+
+    // Close dropdowns when clicking outside them.
+    document.addEventListener("click", event => {
+        document.querySelectorAll(".nav-dropdown.open").forEach(dropdown => {
+            if (!dropdown.contains(event.target)) {
+                dropdown.classList.remove("open");
+
+                const button = dropdown.querySelector(".dropdown-toggle");
+                if (button) {
+                    button.setAttribute("aria-expanded", "false");
+                }
+            }
+        });
+    });
 </script>
 
 </body>
